@@ -1,0 +1,570 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R1
+U 1 1 6545A888
+P 2150 2500
+F 0 "R1" H 2209 2500 50  0000 L CNN
+F 1 "1.2k" H 2209 2455 50  0001 L CNN
+F 2 "" H 2150 2500 50  0001 C CNN
+F 3 "~" H 2150 2500 50  0001 C CNN
+	1    2150 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 6545B0E1
+P 2150 2750
+F 0 "R2" H 2209 2750 50  0000 L CNN
+F 1 "9.1k" H 2209 2705 50  0001 L CNN
+F 2 "" H 2150 2750 50  0001 C CNN
+F 3 "~" H 2150 2750 50  0001 C CNN
+	1    2150 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 6545B46D
+P 3900 2400
+F 0 "R3" H 3959 2400 50  0000 L CNN
+F 1 "5.1" H 3959 2355 50  0001 L CNN
+F 2 "" H 3900 2400 50  0001 C CNN
+F 3 "~" H 3900 2400 50  0001 C CNN
+	1    3900 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 6545B554
+P 3900 3100
+F 0 "R4" H 3959 3100 50  0000 L CNN
+F 1 "5.6k" H 3959 3055 50  0001 L CNN
+F 2 "" H 3900 3100 50  0001 C CNN
+F 3 "~" H 3900 3100 50  0001 C CNN
+	1    3900 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 6545B852
+P 6350 3350
+F 0 "R5" H 6409 3350 50  0000 L CNN
+F 1 "360" H 6409 3305 50  0001 L CNN
+F 2 "" H 6350 3350 50  0001 C CNN
+F 3 "~" H 6350 3350 50  0001 C CNN
+	1    6350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 6545DFA8
+P 6350 3950
+F 0 "R6" H 6409 3950 50  0000 L CNN
+F 1 "5.6k" H 6409 3905 50  0001 L CNN
+F 2 "" H 6350 3950 50  0001 C CNN
+F 3 "~" H 6350 3950 50  0001 C CNN
+	1    6350 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 6545DFAE
+P 2250 5650
+F 0 "R7" H 2309 5650 50  0000 L CNN
+F 1 "9.1k" H 2309 5605 50  0001 L CNN
+F 2 "" H 2250 5650 50  0001 C CNN
+F 3 "~" H 2250 5650 50  0001 C CNN
+	1    2250 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 6545DFB4
+P 2250 5750
+F 0 "R8" H 2309 5750 50  0000 L CNN
+F 1 "9.1k" H 2309 5705 50  0001 L CNN
+F 2 "" H 2250 5750 50  0001 C CNN
+F 3 "~" H 2250 5750 50  0001 C CNN
+	1    2250 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 6545DFBA
+P 2250 5850
+F 0 "R9" H 2309 5850 50  0000 L CNN
+F 1 "9.1k" H 2309 5805 50  0001 L CNN
+F 2 "" H 2250 5850 50  0001 C CNN
+F 3 "~" H 2250 5850 50  0001 C CNN
+	1    2250 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 6545DFC0
+P 2250 5950
+F 0 "R10" H 2309 5950 50  0000 L CNN
+F 1 "9.1k" H 2309 5905 50  0001 L CNN
+F 2 "" H 2250 5950 50  0001 C CNN
+F 3 "~" H 2250 5950 50  0001 C CNN
+	1    2250 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q1
+U 1 1 65462ABF
+P 4350 2750
+F 0 "Q1" H 4540 2750 50  0000 L CNN
+F 1 "2N4401" H 4540 2705 50  0001 L CNN
+F 2 "" H 4550 2850 50  0001 C CNN
+F 3 "~" H 4350 2750 50  0001 C CNN
+	1    4350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q2
+U 1 1 654661D1
+P 7000 3600
+F 0 "Q2" H 7190 3600 50  0000 L CNN
+F 1 "2N4401" H 7190 3555 50  0001 L CNN
+F 2 "" H 7200 3700 50  0001 C CNN
+F 3 "~" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J5
+U 1 1 65467275
+P 1900 6050
+F 0 "J5" H 1980 5996 50  0000 L CNN
+F 1 "Conn_01x08" H 1980 5951 50  0001 L CNN
+F 2 "" H 1900 6050 50  0001 C CNN
+F 3 "~" H 1900 6050 50  0001 C CNN
+	1    1900 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 65467C6D
+P 7550 3150
+F 0 "J4" H 7630 3096 50  0000 L CNN
+F 1 "Conn_01x02" H 7630 3051 50  0001 L CNN
+F 2 "" H 7550 3150 50  0001 C CNN
+F 3 "~" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J3
+U 1 1 65468579
+P 3100 1450
+F 0 "J3" H 3180 1396 50  0000 L CNN
+F 1 "Conn_01x16" H 3180 1351 50  0001 L CNN
+F 2 "" H 3100 1450 50  0001 C CNN
+F 3 "~" H 3100 1450 50  0001 C CNN
+	1    3100 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Row_Letter_Last J1
+U 1 1 6546AC0E
+P 3800 4250
+F 0 "J1" H 3850 4575 50  0000 C CNN
+F 1 "Conn_02x05_Row_Letter_Last" H 3850 4576 50  0001 C CNN
+F 2 "" H 3800 4250 50  0001 C CNN
+F 3 "~" H 3800 4250 50  0001 C CNN
+	1    3800 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Row_Letter_Last J2
+U 1 1 6546C8ED
+P 3050 4250
+F 0 "J2" H 3100 4575 50  0000 C CNN
+F 1 "Conn_02x05_Row_Letter_Last" H 3100 4576 50  0001 C CNN
+F 2 "" H 3050 4250 50  0001 C CNN
+F 3 "~" H 3050 4250 50  0001 C CNN
+	1    3050 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6546DEF6
+P 2150 3050
+F 0 "C1" H 2242 3050 50  0000 L CNN
+F 1 "10nF" H 2242 3005 50  0001 L CNN
+F 2 "" H 2150 3050 50  0001 C CNN
+F 3 "~" H 2150 3050 50  0001 C CNN
+	1    2150 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 5650 2150 5650
+Wire Wire Line
+	2100 5750 2150 5750
+Wire Wire Line
+	2100 5850 2150 5850
+Wire Wire Line
+	2100 5950 2150 5950
+Wire Wire Line
+	2350 5950 2350 5850
+Connection ~ 2350 5750
+Wire Wire Line
+	2350 5750 2350 5650
+Connection ~ 2350 5850
+Wire Wire Line
+	2350 5850 2350 5750
+Wire Wire Line
+	2350 3400 2600 3400
+Connection ~ 2350 5650
+Wire Wire Line
+	6250 3400 6250 3350
+$Comp
+L Device:R_POT RV1
+U 1 1 65494867
+P 2600 2750
+F 0 "RV1" H 2530 2704 50  0000 R CNN
+F 1 "R_POT" H 2530 2795 50  0000 R CNN
+F 2 "" H 2600 2750 50  0001 C CNN
+F 3 "~" H 2600 2750 50  0001 C CNN
+	1    2600 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 2900 2600 3050
+Connection ~ 2600 3400
+Wire Wire Line
+	2250 3050 2600 3050
+Connection ~ 2600 3050
+Wire Wire Line
+	2600 3050 2600 3400
+Wire Wire Line
+	2250 3050 2250 2750
+Connection ~ 2250 3050
+Wire Wire Line
+	2250 2750 2300 2750
+Wire Wire Line
+	2300 1850 2500 1850
+Wire Wire Line
+	2500 1850 2500 1650
+Connection ~ 2250 2750
+Wire Wire Line
+	2300 1850 2300 2400
+Wire Wire Line
+	3800 2400 2300 2400
+Connection ~ 2300 2400
+Wire Wire Line
+	2300 2400 2300 2750
+Wire Wire Line
+	2100 5950 2100 6000
+Connection ~ 2100 5950
+Wire Wire Line
+	2100 5850 2100 5900
+Connection ~ 2100 5850
+Wire Wire Line
+	2100 5750 2100 5800
+Connection ~ 2100 5750
+Wire Wire Line
+	2100 5700 2100 5650
+Connection ~ 2100 5650
+$Comp
+L power:Earth #PWR0101
+U 1 1 654A4B2E
+P 2400 1650
+F 0 "#PWR0101" H 2400 1400 50  0001 C CNN
+F 1 "Earth" H 2400 1500 50  0001 C CNN
+F 2 "" H 2400 1650 50  0001 C CNN
+F 3 "~" H 2400 1650 50  0001 C CNN
+	1    2400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0102
+U 1 1 654A5079
+P 2050 2500
+F 0 "#PWR0102" H 2050 2250 50  0001 C CNN
+F 1 "Earth" H 2050 2350 50  0001 C CNN
+F 2 "" H 2050 2500 50  0001 C CNN
+F 3 "~" H 2050 2500 50  0001 C CNN
+	1    2050 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0103
+U 1 1 654A57F3
+P 2050 3050
+F 0 "#PWR0103" H 2050 2800 50  0001 C CNN
+F 1 "Earth" H 2050 2900 50  0001 C CNN
+F 2 "" H 2050 3050 50  0001 C CNN
+F 3 "~" H 2050 3050 50  0001 C CNN
+	1    2050 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 2750 2050 2650
+Wire Wire Line
+	2050 2650 2250 2650
+Wire Wire Line
+	2250 2650 2250 2500
+Wire Wire Line
+	2250 2500 2250 1900
+Wire Wire Line
+	2250 1900 2600 1900
+Wire Wire Line
+	2600 1900 2600 1650
+Connection ~ 2250 2500
+Wire Wire Line
+	2250 2500 2450 2500
+Wire Wire Line
+	2450 2500 2450 2750
+$Comp
+L power:Earth #PWR0104
+U 1 1 654AB71D
+P 7100 3800
+F 0 "#PWR0104" H 7100 3550 50  0001 C CNN
+F 1 "Earth" H 7100 3650 50  0001 C CNN
+F 2 "" H 7100 3800 50  0001 C CNN
+F 3 "~" H 7100 3800 50  0001 C CNN
+	1    7100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3600 6800 3950
+Wire Wire Line
+	6800 3950 6450 3950
+Wire Wire Line
+	6450 3350 6450 3150
+Wire Wire Line
+	6450 3150 7350 3150
+Wire Wire Line
+	7100 3400 7100 3250
+Wire Wire Line
+	7100 3250 7350 3250
+Wire Wire Line
+	2600 3400 3250 3400
+Wire Wire Line
+	4000 2400 4000 1900
+Wire Wire Line
+	4000 1900 3800 1900
+Wire Wire Line
+	3800 1900 3800 1650
+Wire Wire Line
+	4450 2550 4450 1800
+Wire Wire Line
+	4450 1800 3900 1800
+Wire Wire Line
+	3900 1800 3900 1650
+Wire Wire Line
+	4150 2750 4150 3100
+Wire Wire Line
+	4150 3100 4000 3100
+$Comp
+L power:Earth #PWR0105
+U 1 1 654B6365
+P 4450 2950
+F 0 "#PWR0105" H 4450 2700 50  0001 C CNN
+F 1 "Earth" H 4450 2800 50  0001 C CNN
+F 2 "" H 4450 2950 50  0001 C CNN
+F 3 "~" H 4450 2950 50  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0106
+U 1 1 654B7120
+P 2600 2600
+F 0 "#PWR0106" H 2600 2350 50  0001 C CNN
+F 1 "Earth" H 2600 2450 50  0001 C CNN
+F 2 "" H 2600 2600 50  0001 C CNN
+F 3 "~" H 2600 2600 50  0001 C CNN
+	1    2600 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 3400 3250 3950
+Connection ~ 3250 3400
+Wire Wire Line
+	3250 3400 6250 3400
+Wire Wire Line
+	2350 4900 3600 4900
+Wire Wire Line
+	3600 4900 3600 4450
+Wire Wire Line
+	2350 3400 2350 4900
+Connection ~ 2350 4900
+Wire Wire Line
+	2350 4900 2350 5650
+Wire Wire Line
+	2100 6000 3350 6000
+Wire Wire Line
+	3350 6000 3350 3850
+Wire Wire Line
+	3350 3850 3150 3850
+Wire Wire Line
+	3150 3850 3150 3950
+Wire Wire Line
+	3150 4450 3150 5900
+Wire Wire Line
+	3150 5900 2100 5900
+Wire Wire Line
+	2100 5800 3400 5800
+Wire Wire Line
+	3400 5800 3400 3800
+Wire Wire Line
+	3400 3800 3050 3800
+Wire Wire Line
+	3050 3800 3050 3950
+Wire Wire Line
+	2100 5700 3050 5700
+Wire Wire Line
+	3050 5700 3050 4450
+Wire Wire Line
+	2100 6150 2950 6150
+Wire Wire Line
+	2950 6150 2950 4450
+Wire Wire Line
+	2100 6350 2850 6350
+Wire Wire Line
+	2850 6350 2850 4450
+Wire Wire Line
+	2100 6050 2700 6050
+Wire Wire Line
+	2700 6050 2700 3750
+Wire Wire Line
+	2700 3750 2950 3750
+Wire Wire Line
+	2950 3750 2950 3950
+Wire Wire Line
+	2850 3950 2850 3800
+Wire Wire Line
+	2850 3800 2650 3800
+Wire Wire Line
+	2650 3800 2650 6250
+Wire Wire Line
+	2650 6250 2100 6250
+Wire Wire Line
+	2700 1650 2700 3350
+Wire Wire Line
+	2700 3350 3700 3350
+Wire Wire Line
+	3700 3350 3700 3950
+Wire Wire Line
+	2800 1650 2800 1150
+Wire Wire Line
+	2800 1150 3000 1150
+Wire Wire Line
+	3000 1150 3000 1650
+Wire Wire Line
+	3000 1150 3100 1150
+Wire Wire Line
+	3100 1150 3100 1650
+Connection ~ 3000 1150
+Wire Wire Line
+	3100 1150 3200 1150
+Wire Wire Line
+	3200 1150 3200 1650
+Connection ~ 3100 1150
+Wire Wire Line
+	3200 1150 3300 1150
+Wire Wire Line
+	3300 1150 3300 1650
+Connection ~ 3200 1150
+$Comp
+L power:Earth #PWR0107
+U 1 1 654D146E
+P 2800 1150
+F 0 "#PWR0107" H 2800 900 50  0001 C CNN
+F 1 "Earth" H 2800 1000 50  0001 C CNN
+F 2 "" H 2800 1150 50  0001 C CNN
+F 3 "~" H 2800 1150 50  0001 C CNN
+	1    2800 1150
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 1150
+Wire Wire Line
+	2900 1650 2900 3300
+Wire Wire Line
+	2900 3300 3600 3300
+Wire Wire Line
+	3600 3300 3600 3950
+Wire Wire Line
+	3800 4450 3800 4500
+Wire Wire Line
+	3800 4500 3450 4500
+Wire Wire Line
+	3450 2500 3400 2500
+Wire Wire Line
+	3400 2500 3400 1650
+Wire Wire Line
+	3450 2500 3450 4500
+Wire Wire Line
+	3800 3950 3800 3250
+Wire Wire Line
+	3800 3250 3500 3250
+Wire Wire Line
+	3500 3250 3500 1650
+Wire Wire Line
+	3900 3950 3900 3200
+Wire Wire Line
+	3900 3200 3600 3200
+Wire Wire Line
+	3600 3200 3600 1650
+Wire Wire Line
+	3900 4450 3900 4550
+Wire Wire Line
+	3900 4550 3500 4550
+Wire Wire Line
+	3500 4550 3500 3450
+Wire Wire Line
+	3500 3450 3350 3450
+Wire Wire Line
+	3350 3450 3350 1950
+Wire Wire Line
+	3350 1950 3700 1950
+Wire Wire Line
+	3700 1950 3700 1650
+Wire Wire Line
+	3800 3100 3750 3100
+Wire Wire Line
+	3750 3100 3750 3450
+Wire Wire Line
+	3750 3450 4100 3450
+Wire Wire Line
+	4100 3450 4100 4600
+Wire Wire Line
+	4100 4600 3700 4600
+Wire Wire Line
+	3700 4600 3700 4450
+$Comp
+L power:Earth #PWR0108
+U 1 1 654E5EFC
+P 4000 3950
+F 0 "#PWR0108" H 4000 3700 50  0001 C CNN
+F 1 "Earth" H 4000 3800 50  0001 C CNN
+F 2 "" H 4000 3950 50  0001 C CNN
+F 3 "~" H 4000 3950 50  0001 C CNN
+	1    4000 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 3950 4150 3950
+Wire Wire Line
+	4150 3950 4150 4550
+Wire Wire Line
+	4150 4550 4000 4550
+Wire Wire Line
+	4000 4550 4000 4450
+$EndSCHEMATC

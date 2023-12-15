@@ -1,0 +1,1214 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 6553BD7A
+P 2850 -4100
+F 0 "J1" V 2768 -4588 50  0000 R CNN
+F 1 "Conn_01x08" V 2723 -4588 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2850 -4100 50  0001 C CNN
+F 3 "~" H 2850 -4100 50  0001 C CNN
+	1    2850 -4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Top_Bottom J4
+U 1 1 6553DBDB
+P 2900 -500
+F 0 "J4" V 2996 -788 50  0000 R CNN
+F 1 "Teclado" V 2905 -788 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2900 -500 50  0001 C CNN
+F 3 "~" H 2900 -500 50  0001 C CNN
+	1    2900 -500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Top_Bottom J3
+U 1 1 6553F38C
+P 2900 -1550
+F 0 "J3" V 2996 -1838 50  0000 R CNN
+F 1 "LCD" V 2905 -1838 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2900 -1550 50  0001 C CNN
+F 3 "~" H 2900 -1550 50  0001 C CNN
+	1    2900 -1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Timer_RTC:DS1302+ U5
+U 1 1 655419B6
+P 3450 9200
+F 0 "U5" H 3994 9246 50  0000 L CNN
+F 1 "na" H 3994 9155 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3450 8700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 3450 9000 50  0001 C CNN
+	1    3450 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer_RTC:DS1302+ U8
+U 1 1 6554295A
+P 7950 3000
+F 0 "U8" H 8494 3046 50  0000 L CNN
+F 1 "na" H 8494 2955 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7950 2500 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 7950 2800 50  0001 C CNN
+	1    7950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer_RTC:DS1302+ U6
+U 1 1 65543123
+P 7200 6000
+F 0 "U6" H 7744 6046 50  0000 L CNN
+F 1 "na" H 7744 5955 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7200 5500 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 7200 5800 50  0001 C CNN
+	1    7200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 655594E0
+P 150 3800
+F 0 "R1" H 209 3800 50  0000 L CNN
+F 1 "na" H 209 3755 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 150 3800 50  0001 C CNN
+F 3 "~" H 150 3800 50  0001 C CNN
+	1    150  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6555C210
+P 750 -1650
+F 0 "D2" H 743 -1433 50  0000 C CNN
+F 1 "RED" H 743 -1524 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_IRBlack" H 750 -1650 50  0001 C CNN
+F 3 "~" H 750 -1650 50  0001 C CNN
+	1    750  -1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 6555C5A0
+P -50 -2000
+F 0 "D1" H -50 -2265 50  0000 C CNN
+F 1 "na" H -50 -2174 50  0000 C CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H -50 -2000 50  0001 C CNN
+F 3 "~" H -50 -2000 50  0001 C CNN
+	1    -50  -2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual BT1
+U 1 1 6555D229
+P 9400 1800
+F 0 "BT1" H 9400 2085 50  0000 C CNN
+F 1 "RST" H 9400 1994 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 9400 2000 50  0001 C CNN
+F 3 "~" H 9400 2000 50  0001 C CNN
+	1    9400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6555DC43
+P 650 -3100
+F 0 "C1" H 742 -3100 50  0000 L CNN
+F 1 "10nF" H 742 -3145 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 650 -3100 50  0001 C CNN
+F 3 "~" H 650 -3100 50  0001 C CNN
+	1    650  -3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 P1
+U 1 1 6556053F
+P -800 -800
+F 0 "P1" H -720 -854 50  0000 L CNN
+F 1 "Conn_01x02" H -720 -899 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H -800 -800 50  0001 C CNN
+F 3 "~" H -800 -800 50  0001 C CNN
+	1    -800 -800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell BAT1
+U 1 1 65561E1C
+P 6650 7550
+F 0 "BAT1" H 6768 7600 50  0000 L CNN
+F 1 "Battery_Cell" H 6768 7555 50  0001 L CNN
+F 2 "PCB_N2:BatteryHolder_5.5_5mm" V 6650 7610 50  0001 C CNN
+F 3 "~" V 6650 7610 50  0001 C CNN
+	1    6650 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Fuse 1A1
+U 1 1 65562528
+P 500 -3950
+F 0 "1A1" H 560 -3950 50  0000 L CNN
+F 1 "Fuse" H 560 -3995 50  0001 L CNN
+F 2 "PCB_N2:FUSE_10mm" V 430 -3950 50  0001 C CNN
+F 3 "~" H 500 -3950 50  0001 C CNN
+	1    500  -3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal_GND2 CR1
+U 1 1 655655DB
+P 750 2400
+F 0 "CR1" H 750 2577 50  0000 C CNN
+F 1 "800G137" H 750 2577 50  0001 C CNN
+F 2 "PCB_N2:Crystal_PIN-3" H 750 2400 50  0001 C CNN
+F 3 "~" H 750 2400 50  0001 C CNN
+	1    750  2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 U3
+U 1 1 65566941
+P -950 850
+F 0 "U3" H -950 1118 50  0000 C CNN
+F 1 "na" H -950 1027 50  0000 C CNN
+F 2 "PCB_N2:Crystal_PIN-3" H -950 850 50  0001 C CNN
+F 3 "~" H -950 850 50  0001 C CNN
+	1    -950 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal CR2
+U 1 1 655B87B4
+P 6550 4800
+F 0 "CR2" H 6550 4624 50  0000 C CNN
+F 1 "na" H 6550 4623 50  0001 C CNN
+F 2 "PCB_N2:crystal_2.54_8.7mm" H 6550 4800 50  0001 C CNN
+F 3 "~" H 6550 4800 50  0001 C CNN
+	1    6550 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Timer_RTC:DS1302+ U7
+U 1 1 655C369B
+P 7850 4300
+F 0 "U7" H 8394 4346 50  0000 L CNN
+F 1 "na" H 8394 4255 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7850 3800 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 7850 4100 50  0001 C CNN
+	1    7850 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 2550 -4150 1    50   ~ 0
+12V
+Text Notes 2650 -4150 1    50   ~ 0
+GND
+Text Notes 2750 -4150 1    50   ~ 0
+I-
+Text Notes 2850 -4150 1    50   ~ 0
+I+
+Text Notes 2950 -4150 1    50   ~ 0
+O-\n
+Text Notes 3050 -4150 1    50   ~ 0
+0+
+Text Notes 3150 -4150 1    50   ~ 0
+R-
+Text Notes 3250 -4150 1    50   ~ 0
+R+
+$Comp
+L Interface_UART:MAX491E U2
+U 1 1 6554E922
+P 800 300
+F 0 "U2" H 800 981 50  0000 C CNN
+F 1 "na" H 800 890 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 800 -400 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 850 325 50  0001 C CNN
+	1    800  300 
+	0    1    1    0   
+$EndComp
+$Comp
+L Interface_UART:MAX232I U4
+U 1 1 65543943
+P -1950 4900
+F 0 "U4" H -1950 6281 50  0000 C CNN
+F 1 "na" H -1950 6190 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H -1900 3850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H -1950 5000 50  0001 C CNN
+	1    -1950 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_NXP_HC11:68HC11_PLCC U1
+U 1 1 655541D7
+P 3700 4250
+F 0 "U1" H 3700 6431 50  0000 C CNN
+F 1 "68HC11_PLCC" H 3700 6340 50  0000 C CNN
+F 2 "Package_LCC:PLCC-52_THT-Socket" H 3700 4250 50  0001 C CNN
+F 3 "" H 3700 4250 50  0001 C CNN
+	1    3700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer_RTC:DS1302+ U9
+U 1 1 655426E7
+P 7500 1700
+F 0 "U9" H 8044 1746 50  0000 L CNN
+F 1 "na" H 8044 1655 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7500 1200 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 7500 1500 50  0001 C CNN
+	1    7500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer_RTC:DS1302+ U10
+U 1 1 656B3EF5
+P 7500 -500
+F 0 "U10" H 8044 -454 50  0000 L CNN
+F 1 "na" H 8044 -545 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7500 -1000 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 7500 -700 50  0001 C CNN
+	1    7500 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Top_Bottom J2
+U 1 1 656B55AB
+P 2900 -2600
+F 0 "J2" V 2996 -2888 50  0000 R CNN
+F 1 "LCD" V 2905 -2888 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2900 -2600 50  0001 C CNN
+F 3 "~" H 2900 -2600 50  0001 C CNN
+	1    2900 -2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J5
+U 1 1 6553B28D
+P -2000 9450
+F 0 "J5" V -2128 9730 50  0000 L CNN
+F 1 "IMP" V -2037 9730 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H -2000 9450 50  0001 C CNN
+F 3 "~" H -2000 9450 50  0001 C CNN
+	1    -2000 9450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 655D58F0
+P -1750 750
+F 0 "C2" V -1883 750 50  0000 C CNN
+F 1 "0.22F" V -1884 750 50  0001 C CNN
+F 2 "PCB_N2:CP_13.25_5.0mm" H -1750 750 50  0001 C CNN
+F 3 "~" H -1750 750 50  0001 C CNN
+	1    -1750 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 656D4C88
+P -50 -1300
+F 0 "R2" H 9   -1300 50  0000 L CNN
+F 1 "na" H 9   -1345 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H -50 -1300 50  0001 C CNN
+F 3 "~" H -50 -1300 50  0001 C CNN
+	1    -50  -1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 656D4E02
+P 1350 2250
+F 0 "R3" H 1409 2250 50  0000 L CNN
+F 1 "na" H 1409 2205 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1350 2250 50  0001 C CNN
+F 3 "~" H 1350 2250 50  0001 C CNN
+	1    1350 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 656D5069
+P 200 6000
+F 0 "R4" H 259 6000 50  0000 L CNN
+F 1 "na" H 259 5955 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 200 6000 50  0001 C CNN
+F 3 "~" H 200 6000 50  0001 C CNN
+	1    200  6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 656D517A
+P 200 5800
+F 0 "R5" H 259 5800 50  0000 L CNN
+F 1 "na" H 259 5755 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 200 5800 50  0001 C CNN
+F 3 "~" H 200 5800 50  0001 C CNN
+	1    200  5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 656D5501
+P 200 5600
+F 0 "R6" H 259 5600 50  0000 L CNN
+F 1 "na" H 259 5555 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 200 5600 50  0001 C CNN
+F 3 "~" H 200 5600 50  0001 C CNN
+	1    200  5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 656D564B
+P 1200 10100
+F 0 "R7" H 1259 10100 50  0000 L CNN
+F 1 "na" H 1259 10055 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 10100 50  0001 C CNN
+F 3 "~" H 1200 10100 50  0001 C CNN
+	1    1200 10100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 656D58E1
+P 1200 9900
+F 0 "R8" H 1259 9900 50  0000 L CNN
+F 1 "na" H 1259 9855 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 9900 50  0001 C CNN
+F 3 "~" H 1200 9900 50  0001 C CNN
+	1    1200 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 656D5A4B
+P 1200 9700
+F 0 "R9" H 1259 9700 50  0000 L CNN
+F 1 "na" H 1259 9655 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 9700 50  0001 C CNN
+F 3 "~" H 1200 9700 50  0001 C CNN
+	1    1200 9700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 656D5B8B
+P 1200 9500
+F 0 "R10" H 1259 9500 50  0000 L CNN
+F 1 "na" H 1259 9455 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 9500 50  0001 C CNN
+F 3 "~" H 1200 9500 50  0001 C CNN
+	1    1200 9500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 656D67D5
+P 5450 10100
+F 0 "R11" H 5509 10100 50  0000 L CNN
+F 1 "na" H 5509 10055 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5450 10100 50  0001 C CNN
+F 3 "~" H 5450 10100 50  0001 C CNN
+	1    5450 10100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 656D69D5
+P 5450 9850
+F 0 "R12" H 5509 9850 50  0000 L CNN
+F 1 "na" H 5509 9805 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5450 9850 50  0001 C CNN
+F 3 "~" H 5450 9850 50  0001 C CNN
+	1    5450 9850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 656D6B3A
+P 5450 9600
+F 0 "R13" H 5509 9600 50  0000 L CNN
+F 1 "na" H 5509 9555 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5450 9600 50  0001 C CNN
+F 3 "~" H 5450 9600 50  0001 C CNN
+	1    5450 9600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 656D6D2F
+P 5450 9350
+F 0 "R14" H 5509 9350 50  0000 L CNN
+F 1 "na" H 5509 9305 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5450 9350 50  0001 C CNN
+F 3 "~" H 5450 9350 50  0001 C CNN
+	1    5450 9350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 656D6EC7
+P 6200 6150
+F 0 "R15" H 6259 6150 50  0000 L CNN
+F 1 "na" H 6259 6105 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6200 6150 50  0001 C CNN
+F 3 "~" H 6200 6150 50  0001 C CNN
+	1    6200 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 656D8309
+P 8000 5950
+F 0 "R16" H 8059 5950 50  0000 L CNN
+F 1 "na" H 8059 5905 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 8000 5950 50  0001 C CNN
+F 3 "~" H 8000 5950 50  0001 C CNN
+	1    8000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 656D842C
+P 8250 5950
+F 0 "R17" H 8309 5950 50  0000 L CNN
+F 1 "na" H 8309 5905 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 8250 5950 50  0001 C CNN
+F 3 "~" H 8250 5950 50  0001 C CNN
+	1    8250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 656D85AF
+P 8800 3000
+F 0 "R18" H 8859 3000 50  0000 L CNN
+F 1 "na" H 8859 2955 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 8800 3000 50  0001 C CNN
+F 3 "~" H 8800 3000 50  0001 C CNN
+	1    8800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 656D87DA
+P 9050 3000
+F 0 "R19" H 9109 3000 50  0000 L CNN
+F 1 "na" H 9109 2955 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 9050 3000 50  0001 C CNN
+F 3 "~" H 9050 3000 50  0001 C CNN
+	1    9050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 656D88FA
+P 3350 8100
+F 0 "R20" H 3409 8100 50  0000 L CNN
+F 1 "na" H 3409 8055 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3350 8100 50  0001 C CNN
+F 3 "~" H 3350 8100 50  0001 C CNN
+	1    3350 8100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP_Small C3
+U 1 1 656DA74F
+P -1750 1050
+F 0 "C3" V -1883 1050 50  0000 C CNN
+F 1 "na" V -1884 1050 50  0001 C CNN
+F 2 "PCB_N2:CP_13.25_5.0mm" H -1750 1050 50  0001 C CNN
+F 3 "~" H -1750 1050 50  0001 C CNN
+	1    -1750 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 656DC9A3
+P -3750 5300
+F 0 "C4" H -3658 5300 50  0000 L CNN
+F 1 "2,2uF" H -3658 5255 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H -3750 5300 50  0001 C CNN
+F 3 "~" H -3750 5300 50  0001 C CNN
+	1    -3750 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 656DCC43
+P -3750 5050
+F 0 "C5" H -3658 5050 50  0000 L CNN
+F 1 "2,2uF" H -3658 5005 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H -3750 5050 50  0001 C CNN
+F 3 "~" H -3750 5050 50  0001 C CNN
+	1    -3750 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 656DCEEA
+P -3750 4800
+F 0 "C6" H -3658 4800 50  0000 L CNN
+F 1 "2,2uF" H -3658 4755 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H -3750 4800 50  0001 C CNN
+F 3 "~" H -3750 4800 50  0001 C CNN
+	1    -3750 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 656DD10F
+P -3750 4550
+F 0 "C7" H -3658 4550 50  0000 L CNN
+F 1 "2,2uF" H -3658 4505 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H -3750 4550 50  0001 C CNN
+F 3 "~" H -3750 4550 50  0001 C CNN
+	1    -3750 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 656DD79D
+P -50 4950
+F 0 "C8" H 42  4950 50  0000 L CNN
+F 1 "10nF" H 42  4905 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H -50 4950 50  0001 C CNN
+F 3 "~" H -50 4950 50  0001 C CNN
+	1    -50  4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 656DD9C2
+P 1200 9250
+F 0 "C9" H 1292 9250 50  0000 L CNN
+F 1 "10nF" H 1292 9205 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 1200 9250 50  0001 C CNN
+F 3 "~" H 1200 9250 50  0001 C CNN
+	1    1200 9250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 656DDE40
+P 5450 9100
+F 0 "C10" H 5542 9100 50  0000 L CNN
+F 1 "10nF" H 5542 9055 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 5450 9100 50  0001 C CNN
+F 3 "~" H 5450 9100 50  0001 C CNN
+	1    5450 9100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 656DE40E
+P 5000 7150
+F 0 "C11" H 5092 7150 50  0000 L CNN
+F 1 "10nF" H 5092 7105 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 5000 7150 50  0001 C CNN
+F 3 "~" H 5000 7150 50  0001 C CNN
+	1    5000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 656DE5D2
+P 8900 4350
+F 0 "C12" H 8992 4350 50  0000 L CNN
+F 1 "10nF" H 8992 4305 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8900 4350 50  0001 C CNN
+F 3 "~" H 8900 4350 50  0001 C CNN
+	1    8900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 656DE78E
+P 9100 -250
+F 0 "C13" H 9192 -250 50  0000 L CNN
+F 1 "10nF" H 9192 -295 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 9100 -250 50  0001 C CNN
+F 3 "~" H 9100 -250 50  0001 C CNN
+	1    9100 -250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 656DEAB5
+P 8550 5950
+F 0 "C14" H 8642 5950 50  0000 L CNN
+F 1 "10nF" H 8642 5905 50  0001 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8550 5950 50  0001 C CNN
+F 3 "~" H 8550 5950 50  0001 C CNN
+	1    8550 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 656FAB22
+P 3200 10600
+F 0 "J6" V 3072 10780 50  0000 L CNN
+F 1 "TAC" V 3163 10780 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3200 10600 50  0001 C CNN
+F 3 "~" H 3200 10600 50  0001 C CNN
+	1    3200 10600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0101
+U 1 1 657461F1
+P -150 -1300
+F 0 "#PWR0101" H -150 -1550 50  0001 C CNN
+F 1 "Earth" H -150 -1450 50  0001 C CNN
+F 2 "" H -150 -1300 50  0001 C CNN
+F 3 "~" H -150 -1300 50  0001 C CNN
+	1    -150 -1300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0102
+U 1 1 65747F7A
+P -1850 900
+F 0 "#PWR0102" H -1850 650 50  0001 C CNN
+F 1 "Earth" H -1850 750 50  0001 C CNN
+F 2 "" H -1850 900 50  0001 C CNN
+F 3 "~" H -1850 900 50  0001 C CNN
+	1    -1850 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	-1850 1050 -1850 900 
+Connection ~ -1850 900 
+Wire Wire Line
+	-1850 900  -1850 750 
+$Comp
+L power:Earth #PWR0103
+U 1 1 65749B46
+P 150 -2000
+F 0 "#PWR0103" H 150 -2250 50  0001 C CNN
+F 1 "Earth" H 150 -2150 50  0001 C CNN
+F 2 "" H 150 -2000 50  0001 C CNN
+F 3 "~" H 150 -2000 50  0001 C CNN
+	1    150  -2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0104
+U 1 1 6574A1DC
+P 650 -3000
+F 0 "#PWR0104" H 650 -3250 50  0001 C CNN
+F 1 "Earth" H 650 -3150 50  0001 C CNN
+F 2 "" H 650 -3000 50  0001 C CNN
+F 3 "~" H 650 -3000 50  0001 C CNN
+	1    650  -3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0105
+U 1 1 6574B0D0
+P -3850 5300
+F 0 "#PWR0105" H -3850 5050 50  0001 C CNN
+F 1 "Earth" H -3850 5150 50  0001 C CNN
+F 2 "" H -3850 5300 50  0001 C CNN
+F 3 "~" H -3850 5300 50  0001 C CNN
+	1    -3850 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0106
+U 1 1 6574B5A4
+P -3850 4550
+F 0 "#PWR0106" H -3850 4300 50  0001 C CNN
+F 1 "Earth" H -3850 4400 50  0001 C CNN
+F 2 "" H -3850 4550 50  0001 C CNN
+F 3 "~" H -3850 4550 50  0001 C CNN
+	1    -3850 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0107
+U 1 1 6574BCBB
+P -750 4900
+F 0 "#PWR0107" H -750 4650 50  0001 C CNN
+F 1 "Earth" H -750 4750 50  0001 C CNN
+F 2 "" H -750 4900 50  0001 C CNN
+F 3 "~" H -750 4900 50  0001 C CNN
+	1    -750 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0108
+U 1 1 6574C135
+P -1800 9250
+F 0 "#PWR0108" H -1800 9000 50  0001 C CNN
+F 1 "Earth" H -1800 9100 50  0001 C CNN
+F 2 "" H -1800 9250 50  0001 C CNN
+F 3 "~" H -1800 9250 50  0001 C CNN
+	1    -1800 9250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0109
+U 1 1 6574C859
+P 1100 9500
+F 0 "#PWR0109" H 1100 9250 50  0001 C CNN
+F 1 "Earth" H 1100 9350 50  0001 C CNN
+F 2 "" H 1100 9500 50  0001 C CNN
+F 3 "~" H 1100 9500 50  0001 C CNN
+	1    1100 9500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0110
+U 1 1 6574D0BA
+P 3000 10400
+F 0 "#PWR0110" H 3000 10150 50  0001 C CNN
+F 1 "Earth" H 3000 10250 50  0001 C CNN
+F 2 "" H 3000 10400 50  0001 C CNN
+F 3 "~" H 3000 10400 50  0001 C CNN
+	1    3000 10400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0111
+U 1 1 6574D513
+P 5550 10100
+F 0 "#PWR0111" H 5550 9850 50  0001 C CNN
+F 1 "Earth" H 5550 9950 50  0001 C CNN
+F 2 "" H 5550 10100 50  0001 C CNN
+F 3 "~" H 5550 10100 50  0001 C CNN
+	1    5550 10100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0112
+U 1 1 6574DB97
+P 6750 7550
+F 0 "#PWR0112" H 6750 7300 50  0001 C CNN
+F 1 "Earth" H 6750 7400 50  0001 C CNN
+F 2 "" H 6750 7550 50  0001 C CNN
+F 3 "~" H 6750 7550 50  0001 C CNN
+	1    6750 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0113
+U 1 1 6574E31B
+P 3450 9600
+F 0 "#PWR0113" H 3450 9350 50  0001 C CNN
+F 1 "Earth" H 3450 9450 50  0001 C CNN
+F 2 "" H 3450 9600 50  0001 C CNN
+F 3 "~" H 3450 9600 50  0001 C CNN
+	1    3450 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0114
+U 1 1 6574E709
+P 1100 9250
+F 0 "#PWR0114" H 1100 9000 50  0001 C CNN
+F 1 "Earth" H 1100 9100 50  0001 C CNN
+F 2 "" H 1100 9250 50  0001 C CNN
+F 3 "~" H 1100 9250 50  0001 C CNN
+	1    1100 9250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0115
+U 1 1 6574EF1D
+P 5550 9100
+F 0 "#PWR0115" H 5550 8850 50  0001 C CNN
+F 1 "Earth" H 5550 8950 50  0001 C CNN
+F 2 "" H 5550 9100 50  0001 C CNN
+F 3 "~" H 5550 9100 50  0001 C CNN
+	1    5550 9100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0116
+U 1 1 6574F2E0
+P 5000 7050
+F 0 "#PWR0116" H 5000 6800 50  0001 C CNN
+F 1 "Earth" H 5000 6900 50  0001 C CNN
+F 2 "" H 5000 7050 50  0001 C CNN
+F 3 "~" H 5000 7050 50  0001 C CNN
+	1    5000 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0117
+U 1 1 6574F595
+P 8250 5850
+F 0 "#PWR0117" H 8250 5600 50  0001 C CNN
+F 1 "Earth" H 8250 5700 50  0001 C CNN
+F 2 "" H 8250 5850 50  0001 C CNN
+F 3 "~" H 8250 5850 50  0001 C CNN
+	1    8250 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0118
+U 1 1 6574F922
+P 8550 5850
+F 0 "#PWR0118" H 8550 5600 50  0001 C CNN
+F 1 "Earth" H 8550 5700 50  0001 C CNN
+F 2 "" H 8550 5850 50  0001 C CNN
+F 3 "~" H 8550 5850 50  0001 C CNN
+	1    8550 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0119
+U 1 1 6574FC91
+P 8900 4250
+F 0 "#PWR0119" H 8900 4000 50  0001 C CNN
+F 1 "Earth" H 8900 4100 50  0001 C CNN
+F 2 "" H 8900 4250 50  0001 C CNN
+F 3 "~" H 8900 4250 50  0001 C CNN
+	1    8900 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0120
+U 1 1 657501B4
+P -1150 850
+F 0 "#PWR0120" H -1150 600 50  0001 C CNN
+F 1 "Earth" H -1150 700 50  0001 C CNN
+F 2 "" H -1150 850 50  0001 C CNN
+F 3 "~" H -1150 850 50  0001 C CNN
+	1    -1150 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0121
+U 1 1 65750D94
+P -600 -800
+F 0 "#PWR0121" H -600 -1050 50  0001 C CNN
+F 1 "Earth" H -600 -950 50  0001 C CNN
+F 2 "" H -600 -800 50  0001 C CNN
+F 3 "~" H -600 -800 50  0001 C CNN
+	1    -600 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0122
+U 1 1 6575261B
+P 2650 -3900
+F 0 "#PWR0122" H 2650 -4150 50  0001 C CNN
+F 1 "Earth" H 2650 -4050 50  0001 C CNN
+F 2 "" H 2650 -3900 50  0001 C CNN
+F 3 "~" H 2650 -3900 50  0001 C CNN
+	1    2650 -3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0123
+U 1 1 65752B6F
+P 6700 6200
+F 0 "#PWR0123" H 6700 5950 50  0001 C CNN
+F 1 "Earth" H 6700 6050 50  0001 C CNN
+F 2 "" H 6700 6200 50  0001 C CNN
+F 3 "~" H 6700 6200 50  0001 C CNN
+	1    6700 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0124
+U 1 1 6575307F
+P 7850 4700
+F 0 "#PWR0124" H 7850 4450 50  0001 C CNN
+F 1 "Earth" H 7850 4550 50  0001 C CNN
+F 2 "" H 7850 4700 50  0001 C CNN
+F 3 "~" H 7850 4700 50  0001 C CNN
+	1    7850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0125
+U 1 1 65753B52
+P 7450 3100
+F 0 "#PWR0125" H 7450 2850 50  0001 C CNN
+F 1 "Earth" H 7450 2950 50  0001 C CNN
+F 2 "" H 7450 3100 50  0001 C CNN
+F 3 "~" H 7450 3100 50  0001 C CNN
+	1    7450 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0126
+U 1 1 65753E92
+P 7450 3200
+F 0 "#PWR0126" H 7450 2950 50  0001 C CNN
+F 1 "Earth" H 7450 3050 50  0001 C CNN
+F 2 "" H 7450 3200 50  0001 C CNN
+F 3 "~" H 7450 3200 50  0001 C CNN
+	1    7450 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0127
+U 1 1 657544E1
+P 7850 2600
+F 0 "#PWR0127" H 7850 2350 50  0001 C CNN
+F 1 "Earth" H 7850 2450 50  0001 C CNN
+F 2 "" H 7850 2600 50  0001 C CNN
+F 3 "~" H 7850 2600 50  0001 C CNN
+	1    7850 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0128
+U 1 1 65754C82
+P 7950 3400
+F 0 "#PWR0128" H 7950 3150 50  0001 C CNN
+F 1 "Earth" H 7950 3250 50  0001 C CNN
+F 2 "" H 7950 3400 50  0001 C CNN
+F 3 "~" H 7950 3400 50  0001 C CNN
+	1    7950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0129
+U 1 1 657552DE
+P 7450 2800
+F 0 "#PWR0129" H 7450 2550 50  0001 C CNN
+F 1 "Earth" H 7450 2650 50  0001 C CNN
+F 2 "" H 7450 2800 50  0001 C CNN
+F 3 "~" H 7450 2800 50  0001 C CNN
+	1    7450 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0130
+U 1 1 6575620A
+P 7000 1800
+F 0 "#PWR0130" H 7000 1550 50  0001 C CNN
+F 1 "Earth" H 7000 1650 50  0001 C CNN
+F 2 "" H 7000 1800 50  0001 C CNN
+F 3 "~" H 7000 1800 50  0001 C CNN
+	1    7000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0131
+U 1 1 6575637B
+P 7000 1900
+F 0 "#PWR0131" H 7000 1650 50  0001 C CNN
+F 1 "Earth" H 7000 1750 50  0001 C CNN
+F 2 "" H 7000 1900 50  0001 C CNN
+F 3 "~" H 7000 1900 50  0001 C CNN
+	1    7000 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0132
+U 1 1 657568A3
+P 7500 2100
+F 0 "#PWR0132" H 7500 1850 50  0001 C CNN
+F 1 "Earth" H 7500 1950 50  0001 C CNN
+F 2 "" H 7500 2100 50  0001 C CNN
+F 3 "~" H 7500 2100 50  0001 C CNN
+	1    7500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0133
+U 1 1 65757367
+P 7000 1500
+F 0 "#PWR0133" H 7000 1250 50  0001 C CNN
+F 1 "Earth" H 7000 1350 50  0001 C CNN
+F 2 "" H 7000 1500 50  0001 C CNN
+F 3 "~" H 7000 1500 50  0001 C CNN
+	1    7000 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0134
+U 1 1 657577B8
+P 7500 -100
+F 0 "#PWR0134" H 7500 -350 50  0001 C CNN
+F 1 "Earth" H 7500 -250 50  0001 C CNN
+F 2 "" H 7500 -100 50  0001 C CNN
+F 3 "~" H 7500 -100 50  0001 C CNN
+	1    7500 -100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0135
+U 1 1 65757CCE
+P 7000 -600
+F 0 "#PWR0135" H 7000 -850 50  0001 C CNN
+F 1 "Earth" H 7000 -750 50  0001 C CNN
+F 2 "" H 7000 -600 50  0001 C CNN
+F 3 "~" H 7000 -600 50  0001 C CNN
+	1    7000 -600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0136
+U 1 1 65757E70
+P 7000 -700
+F 0 "#PWR0136" H 7000 -950 50  0001 C CNN
+F 1 "Earth" H 7000 -850 50  0001 C CNN
+F 2 "" H 7000 -700 50  0001 C CNN
+F 3 "~" H 7000 -700 50  0001 C CNN
+	1    7000 -700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0137
+U 1 1 65758681
+P 800 -100
+F 0 "#PWR0137" H 800 -350 50  0001 C CNN
+F 1 "Earth" H 800 -250 50  0001 C CNN
+F 2 "" H 800 -100 50  0001 C CNN
+F 3 "~" H 800 -100 50  0001 C CNN
+	1    800  -100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0138
+U 1 1 65758C87
+P 200 300
+F 0 "#PWR0138" H 200 50  50  0001 C CNN
+F 1 "Earth" H 200 150 50  0001 C CNN
+F 2 "" H 200 300 50  0001 C CNN
+F 3 "~" H 200 300 50  0001 C CNN
+	1    200  300 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0139
+U 1 1 65758F4F
+P 200 400
+F 0 "#PWR0139" H 200 150 50  0001 C CNN
+F 1 "Earth" H 200 250 50  0001 C CNN
+F 2 "" H 200 400 50  0001 C CNN
+F 3 "~" H 200 400 50  0001 C CNN
+	1    200  400 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0140
+U 1 1 657593F5
+P 2800 -1850
+F 0 "#PWR0140" H 2800 -2100 50  0001 C CNN
+F 1 "Earth" H 2800 -2000 50  0001 C CNN
+F 2 "" H 2800 -1850 50  0001 C CNN
+F 3 "~" H 2800 -1850 50  0001 C CNN
+	1    2800 -1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0141
+U 1 1 65759933
+P 3000 -2400
+F 0 "#PWR0141" H 3000 -2650 50  0001 C CNN
+F 1 "Earth" H 3000 -2550 50  0001 C CNN
+F 2 "" H 3000 -2400 50  0001 C CNN
+F 3 "~" H 3000 -2400 50  0001 C CNN
+	1    3000 -2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0142
+U 1 1 6575A07A
+P 9200 1800
+F 0 "#PWR0142" H 9200 1550 50  0001 C CNN
+F 1 "Earth" H 9200 1650 50  0001 C CNN
+F 2 "" H 9200 1800 50  0001 C CNN
+F 3 "~" H 9200 1800 50  0001 C CNN
+	1    9200 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0143
+U 1 1 6575A6F1
+P 9600 1800
+F 0 "#PWR0143" H 9600 1550 50  0001 C CNN
+F 1 "Earth" H 9600 1650 50  0001 C CNN
+F 2 "" H 9600 1800 50  0001 C CNN
+F 3 "~" H 9600 1800 50  0001 C CNN
+	1    9600 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0144
+U 1 1 65761855
+P 3700 6250
+F 0 "#PWR0144" H 3700 6000 50  0001 C CNN
+F 1 "Earth" H 3700 6100 50  0001 C CNN
+F 2 "" H 3700 6250 50  0001 C CNN
+F 3 "~" H 3700 6250 50  0001 C CNN
+	1    3700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0145
+U 1 1 65761BA8
+P 2700 5550
+F 0 "#PWR0145" H 2700 5300 50  0001 C CNN
+F 1 "Earth" H 2700 5400 50  0001 C CNN
+F 2 "" H 2700 5550 50  0001 C CNN
+F 3 "~" H 2700 5550 50  0001 C CNN
+	1    2700 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0146
+U 1 1 65761F25
+P 2700 5850
+F 0 "#PWR0146" H 2700 5600 50  0001 C CNN
+F 1 "Earth" H 2700 5700 50  0001 C CNN
+F 2 "" H 2700 5850 50  0001 C CNN
+F 3 "~" H 2700 5850 50  0001 C CNN
+	1    2700 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0147
+U 1 1 6576220B
+P 2700 5350
+F 0 "#PWR0147" H 2700 5100 50  0001 C CNN
+F 1 "Earth" H 2700 5200 50  0001 C CNN
+F 2 "" H 2700 5350 50  0001 C CNN
+F 3 "~" H 2700 5350 50  0001 C CNN
+	1    2700 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0148
+U 1 1 6576267A
+P 2700 3450
+F 0 "#PWR0148" H 2700 3200 50  0001 C CNN
+F 1 "Earth" H 2700 3300 50  0001 C CNN
+F 2 "" H 2700 3450 50  0001 C CNN
+F 3 "~" H 2700 3450 50  0001 C CNN
+	1    2700 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0149
+U 1 1 65762780
+P 2700 3550
+F 0 "#PWR0149" H 2700 3300 50  0001 C CNN
+F 1 "Earth" H 2700 3400 50  0001 C CNN
+F 2 "" H 2700 3550 50  0001 C CNN
+F 3 "~" H 2700 3550 50  0001 C CNN
+	1    2700 3550
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
