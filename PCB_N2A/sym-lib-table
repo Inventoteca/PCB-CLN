@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PCB_N2A-rescue")(type "KiCad")(uri "${KIPRJMOD}/PCB_N2A-rescue.kicad_sym")(options "")(descr ""))
+)

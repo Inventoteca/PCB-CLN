@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/New_Library.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "New_Library")(type "Legacy")(uri "${KIPRJMOD}/New_Library.lib")(options "")(descr ""))
+  (lib (name "PCB_N4(box)-rescue")(type "KiCad")(uri "${KIPRJMOD}/PCB_N4(box)-rescue.kicad_sym")(options "")(descr ""))
 )
